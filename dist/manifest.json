@@ -20,7 +20,7 @@
         "assets/content-1d15915c.js"
       ],
       "matches": [
-        "https://www.mathletics.com/*"
+        "*://github.com/*"
       ]
     }
   ],

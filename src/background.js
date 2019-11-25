@@ -8,7 +8,7 @@ chrome.runtime.onInstalled.addListener(function() {
 
         chrome.declarativeContent.onPageChanged.addRules([{
                 conditions: [new chrome.declarativeContent.PageStateMatcher({
-                    pageUrl: { hostEquals: 'www.mathletics.com' },
+                    pageUrl: { hostEquals: 'github.com' },
                 })],
 
                 actions: [new chrome.declarativeContent.ShowPageAction()]
