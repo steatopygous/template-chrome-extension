@@ -1,0 +1,35 @@
+{
+  "name": "extension-name",
+  "version": "1.0.0",
+  "author": "Harry Ohlsen",
+  "description": "Chrome extension to ...",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/mathletics/mle-text-to-speech-chrome-extension.git"
+  },
+  "keywords": [
+    "Some",
+    "Key",
+    "Words"
+  ],
+  "license": "ISC",
+  "homepage": "https://google.com",
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.4",
+    "rollup": "^1.27.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-chrome-extension": "^1.2.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "NAME OF EXTENSION",
+  "version": "1.0",
+  "description": "DESCRIPTION OF EXTENSION",
+  "permissions": [
+    "declarativeContent",
+    "storage",
+    "activeTab"
+  ],
+  "background": {
+    "scripts": [
+      "assets/background-148e9bd1.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content-1d15915c.js"
+      ],
+      "matches": [
+        "https://google.com/*"
+      ]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon-16.png",
+      "32": "images/icon-32.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "32": "images/icon-32.png",
+    "48": "images/icon-48.png",
+    "128": "images/icon-128.png"
+  },
+  "web_accessible_resources": [
+    "content.js"
+  ]
+}
