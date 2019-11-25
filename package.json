@@ -8,7 +8,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "/bin/rm -fR ./dist && rollup -c",
     "watch": "rollup -c -w"
   },
   "repository": {
