@@ -4,16 +4,16 @@ chrome.runtime.onInstalled.addListener(function() {
     });
 
     chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-        // NOTE: Put one of these into the array for each domain you
-        //       want your extension to work with.
+        // NOTE: Add one of these for each domain you want your extension to work with.
 
         chrome.declarativeContent.onPageChanged.addRules([{
-            conditions: [new chrome.declarativeContent.PageStateMatcher({
-                pageUrl: { hostEquals: 'google.com' },
-            })
-            ],
-            actions: [new chrome.declarativeContent.ShowPageAction()]
-        }]);
+                conditions: [new chrome.declarativeContent.PageStateMatcher({
+                    pageUrl: { hostEquals: 'www.mathletics.com' },
+                })],
+
+                actions: [new chrome.declarativeContent.ShowPageAction()]
+            }
+        ]);
     });
 });
 
